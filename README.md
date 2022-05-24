@@ -1,202 +1,104 @@
-# Simply Love (StepMania 5)
+# Horsey's Simply Love (StepMania 5)
 
 ![Arrow Logo](https://i.imgur.com/oZmxyGo.png)
+
+## IMPORTANT, WARNING, READ ME!:
+
+This theme currently only works on Outfox Alpha 4 LTS and above. This version of Outfox has not been released to the public yet. When it has been released, a download link will be provided below. If you would like to use this theme on any other version of SM5/Outfox, you will need to contact me. 
 
 ## 🤠About This Fork🐴
 
 The goal of this fork is to improve upon the mainline Simply Love theme. The upstream maintainers are very particular in what they will accept as a pull request based on their own personal idea of what the theme should be. I take a far more progressive approach to my fork and will actively look to merge new and interesting ideas from the many forks out there. Sometimes though, my fork aims to clean up /many/ of the inconsistencies and general UI oddities that plague the mainline branch. I hope you enjoy this fork if you find that you prefer it to the mainline theme.
 
-The new features that exist in this fork are listed below:
+The new features and design paradigms that exist in this fork are listed below:
 
-✅ Re-added vocalize support
+## ScreenSelectMusic and ScreenEvaluation redesign
 
- You'll need to download the old vocalize pack [here](http://www.mediafire.com/file/i8osxoy3h2ikdbj/Vocalize.zip/file) and place it in ~/Other/
+The most drastic change in this fork is the rework of ScreenSelectMusic. The screen was completely overhauled to have a different UI (and screen) depending on the aspect ratio selected in system options. In the interest of saving space, many new features will not be supported in 4:3 aspect ratio because there simply is not enough space onscreen with older displays. This theme fully utilizes the alotted space in 16:9. It is *highly recommended* to use this theme in 16:9 aspect ratio. When you select 16:9, instead of going to ScreenSelectMusic, you'll be automatically directed to a new screen called ScreenSelectMusicWide which was created to keep the 16:9 and 4:3 aspect ratio environments completely separate from each other.
+
+
+The screenshots below showcase the redesigned screens:
+
+![ScreenSelectMusicWide](https://user-images.githubusercontent.com/5679966/169926739-056a4964-71eb-4d2c-8211-55afbd2bed1f.jpg)
+![ScreenEvaluation common](https://user-images.githubusercontent.com/5679966/169926744-86e2eaf0-1820-45a3-9f75-75a8852856d0.png)
+![Highscore Expansion (Entry)](https://i.imgur.com/G574IaR.png)
+
+## What New Options Are Available?
+
+New options can be found in Simply Love Options (the operator menu)
+![Screen Shot 2022-05-23 at 11 31 59 AM](https://user-images.githubusercontent.com/5679966/169884308-93d41c85-c3ad-4335-ad7e-80820b815f03.png)
+
+Change Score Vocalization in Advanced Options (after selecting a song)
+
+![Screen Shot 2022-05-23 at 5 55 44 PM](https://user-images.githubusercontent.com/5679966/169927408-13416f01-9011-48ea-87a4-c17f2db24214.png)
+ 
+✅ Expand Personal Highscore name to 9 characters (configurable in Simply Love Options)
+
+✅ Verbose Song Folder: Display "Song Folder" or "Group" On SelectMusic and Evaluation
+<details>
+  <summary>Click to expand for details ⬇️</summary>
+SongDescription on ScreenSelectMusic and TitleAndBanner on ScreenEvaluation have been reworked to show either the song folder or song group from the currently selected song. There is a preference in Simple Love Options to toggle between the two; the default is to display the song Group. This is especially useful when sorting by anything other than group in the SongWheel. The rework of ScreenEvaluation shows only the current group because I don't see a need to display the exact folder a song is in on Evaluation.
+  </details>
+
+✅ Option to show the Pack/Group banner instead of the default banner
+
+<details>
+  <summary>Click to expand for details ⬇️</summary>
+ 
+This is configurable in Simply Love Options. When a song group (pack) has a banner, but a song does not have a banner, the song group (pack) banner will be shown. When there is no group (pack) banner, and a song does not have a banner, the default banner will be shown. The default is to show the group banner when no banner is present.
+
+ </details>
+ 
+ ## New Features And Tweaks
+ 
+ ✅ Re-added vocalize score support (The selected voice will read out your score when arriving in Evaluation)
+<details>
+  <summary>Click to expand for details ⬇️</summary>
+ 
+You'll need to download the old vocalize pack [here](http://www.mediafire.com/file/i8osxoy3h2ikdbj/Vocalize.zip/file) and place it in ~/Other/
 
  If you placed the Vocalize pack correctly, the option to select a vocalization will appear in the "Advanced Options" page in Player Options, all the way at the bottom.
+ </details>
 
-✅ Display "Song Folder" or "Group" On SelectMusic and Evaluation
+✅ Added a clock on ScreenSelectMusic in CoinMode_Home. This is useful for home players that want to keep track of the time while playing.
 
-SongDescription on ScreenSelectMusic and TitleAndBanner on ScreenEvaluation have been reworked to show either the song folder or song group from the currently selected song. There is a preference in Simple Love Options to toggle between the two; the default is to display the song Group. This is especially useful when sorting by anything other than group in the SongWheel. The rework of ScreenEvaluation shows only the current group because I don't see a need to display the exact folder a song is in on Evaluation.
-
-![ScreenSelectMusic Rework](https://i.imgur.com/h5TuVsy.png)
-![ScreenEvaluation Rework](https://i.imgur.com/EFAy08c.png)
-
-✅ Expand Personal Highscore name to 9 characters (configurable in Simply Love Options)
- ![Highscore Expansion (Entry)](https://i.imgur.com/G574IaR.png)
- ![Highscore Expansion (SL Options)](https://i.imgur.com/pxI4jsO.png)
-
- ✅ Added a clock on ScreenSelectMusic in CoinMode_Home. This is useful for home players that want to keep track of the time while playing.
-
- ![ScreenSelectMusic clock](https://i.imgur.com/Mhjj8qL.png)
- ![ScreenEvaluation clock](https://i.imgur.com/aNRHfFr.png)
-
-✅ There is now a preference to display the group banner for songs that do not have a banner. This is configurable in Simply Love Options. When a song group (pack) has a banner, but a song does not have a banner, the song group (pack) banner will be shown. When there is no group (pack) banner, and a song does not have a banner, the default banner will be shown. The default is to show the group banner when no banner is present.
-
-✅ Moved "Has Edit" graphic to outside the SongWheel to give more room for the SongTitle in the MusicWheel. This implementation is much cleaner.
-
-![HasEdit image](https://i.imgur.com/elOjMHM.png)
+✅ Moved "Has Edit" graphic to outside the SongWheel on 4:3 to give more room for the SongTitle in the MusicWheel. This implementation is much cleaner. In 16:9 this graphic in the music wheel because there is adequate space.
 
 ✅ Slightly redesigned ScreenEvaluation to clean up "floating" BitmapText:
-  *Difficulty number is now in the coloured box along with the difficulty name (beginner, expert, etc).
-  *Style (single/double) string was removed from the evaluation screen because it's redundant information when there is a graphical representation of style in the top right of the screen.
-  *Song credit information is now in a quad that is the same colour as the difficulty box but darkened (ligher colour in rainbow mode). The difficulty box was also widened from a square to a rectangle to better fit the difficulty name text.
-![ScreenEvaluation cleanup](https://i.imgur.com/KL6WYIw.png)
+<details>
+  <summary>Click to expand for details ⬇️</summary>
+ 
+  - Difficulty number is now in the coloured box along with the difficulty name (beginner, expert, etc).
+ 
+  - Style (single/double) string was removed from the evaluation screen because it's redundant information when there is a graphical representation of style in the top right of the screen.
+ 
+  - Song credit information is now in a quad that is the same colour as the difficulty box but darkened (ligher colour in rainbow mode). The difficulty box was also widened from a square to a rectangle to better fit the difficulty name text.
+ 
+  </details>
+✅ New Features Enabled By ScreenSelectMusicWide
 
-✅ Completely reworked ScreenSelectMusic in widescreen aspect ratio to better make use of space. ScreenSelectMusic is no longer very lopsided in appearance with the song wheel on the right side and player elements squished on the left side. The main goal of the rework was to put all of the P1 assets on the left and P2 assets on the right. I achieved this by creating a the new screen "ScreenSelectMusicWide".
+<details>
+  <summary>Click to expand for details ⬇️</summary>
+Completely reworked ScreenSelectMusic; this screen is no longer very lopsided in appearance with the song wheel on the right side and player elements squished on the left side. The main goal of the rework was to put all of the P1 assets on the left and P2 assets on the right. 
 
- *ScreenSelectMusic is now visually balanced
- *There is a huge amount of real estate opened up for new features on this screen.
- *There is absolutely no second guessing which information pertains to which player.
- *Intuitively, song difficulty increases from left to right (sorry Semitic language speakers).
- *There's room to put a profile card (à la Waterfall, Groovenights) with even more room to add other stats as well (à la Digital Dance).
- *This layout eventually frees up enough space for live chart previews for each player
- *ScreenSelectMusic is different when using widescreen, old UI is preserved in 4:3 aspect ratio because the old UI is a better use of the lesser amount of screen space.
+ - ScreenSelectMusicWide is now visually balanced
+ 
+ - There is a huge amount of real estate opened up for new features on this screen.
+ 
+ - There is absolutely no second guessing which information pertains to which player.
+ 
+ - Intuitively, song difficulty increases from left to right.
 
  In a future commit, I would like to change the I/O buttons for this screen making MenuLeft/PadLeft and MenuRight/PadRight select difficulty (without needing to double tap), and MenuUp and MenuDown scroll through the SongWheel.
+  </details>
+ ✅ Show a profile card for players with a local profile 
 
- ✅ Show a profile card for players with a local profile (and should work too with USB profiles, but they are untested beacuse I haven't set up USB profiles yet). The profile card replaces the player name and avatar in the footer of ScreenSelectMusicWide and ScreenEvaluationStage. The profile card shows how many quads, tri-stars, duo-stars, and single-stars a player has achieved across ALL gametypes and difficulties. There is also a cool readout for how many times a player has attempted a particular song. Guest profiles (no profile) do not have a corresponding profile card. Make sure you make a local (or set up USB profiles) for yourself and any guests you might have over!
-
- ![Screen Shot 2021-06-14 at 12 39 37 AM](https://user-images.githubusercontent.com/5679966/121857261-48a1c500-ccaa-11eb-964f-e23d76bf848b.png)
- ![Screen Shot 2021-06-14 at 12 40 07 AM](https://user-images.githubusercontent.com/5679966/121857254-47709800-ccaa-11eb-8b6e-440a79d7cd68.png)
-
- ![ScreenSelectMusic rework](https://i.imgur.com/3tSx2bt.png)
-
-## About
-
-Simply Love is a StepMania 5 theme for the post-ITG community.
-
-It features a clean and simple design, offers numerous data-driven features not implemented by the StepMania 5 engine, and allows the current generation of ITG fans to breathe new life into the game they've known for over a decade.
-
-Simply Love was originally designed and implemented for a previous version of StepMania (SM3.95) by hurtpiggypig.  For more information on that version of Simply Love, check here:
-https://www.youtube.com/watch?v=OtcWy5m6-CQ
-
-
-## Supported Versions of StepMania
-
-Simply Love is compatible with current releases from the official StepMania project.
-
-**Compatible Releases**<br>
-✅ [StepMania 5.0.12](https://github.com/stepmania/stepmania/releases/tag/v5.0.12)<br>
-✅ [StepMania 5.1-b2](https://github.com/stepmania/stepmania/releases/tag/v5.1.0-b2)<br>
-✅ [OutFox 0.4.14.1](https://projectoutfox.com/releases/0.4.14.1) and newer (preliminary support). Versions prior to that are not supported.<br>
-
-For new installations we currently recommend installing StepMania 5.1. While
-5.0.12 is officially the latest stable release of StepMania, 5.1 is widely used
-and an improvement over 5.0 in almost every regard. StepMania 5.3 (Outfox) is
-currently in an alpha stage of development. Check it out, though. The project
-is making great progress!
-
-If you are able to compile StepMania's source code yourself, the [5_1-new branch](https://github.com/stepmania/stepmania/tree/5_1-new/) is supported.  The wiki has [instructions for compiling](https://github.com/stepmania/stepmania/wiki/Compiling-StepMania).
-
-
-**Incompatible**<br>
-❌ Forks of SM5 (e.g. *starworlds*)<br>
-❌ Older versions of StepMania (e.g. StepMania 3.9)<br>
-❌ Forks of older versions of StepMania (e.g. OpenITG, NotITG)<br>
-❌ SM5.2
-
-
-## Installing Simply Love
-
-If you are upgrading from a previous version of Simply Love, fully delete the old Simply Love folder first.  **Do not merge the new folder into the old.**
-
-You can download the current Simply Love release at the [Latest Release](https://github.com/Simply-Love/Simply-Love-SM5/releases/latest) page.
-
-Full install instructions are in the [Installing Simply Love](./Other/Documentation/InstallingSimplyLove-README.md) README.
-
-
-## Language Support
-
-Simply Love has support for:
-
-  * English
-  * Deutsch
-  * Español
-  * Français
-  * Italiano
-  * 日本語
-  * Polski
-  * Português Brasileiro (incomplete, translator wanted)
-
-The current language can be changed in Simply Love under *System Options*.
-
-
-## Aspect Ratio Support
-
-Simply Love is designed to be usable at resolutions as low as 640x480 but still look crisp and clean in HD, 2k, 4k, etc.  It supports many screen aspect ratios:
-
-  * <strong>16:9</strong> (common)
-  * <strong>16:10</strong> (Apple laptops, some LCD monitors)
-  * <strong>4:3</strong> (CRT arcade monitors, older TVs)
-  * <strong>21:9</strong> ("Ultrawide")
-
-The aspect ratio can be changed under *Graphics / Sound Options*.
-
-
-## Screenshots
-
-![Title Screen](https://i.imgur.com/txGZj2Ul.png)
-![Gameplay](https://i.imgur.com/6PRBIHil.png)
-![twenty-one nine gameplay](https://i.imgur.com/rl6WibDl.png)
-![Player Options](https://i.imgur.com/Jk5A4LTl.png)
-![Evaluation](https://i.imgur.com/VamMT1Ql.png)
-![Select Profile](https://i.imgur.com/1SsDc90l.png)
-![Visual Themes](https://i.imgur.com/AQeRafLl.png)
-
-Check out this imgur album for more screenshots: [http://imgur.com/a/56wDq](http://imgur.com/a/56wDq)
-
-
----
-
-# Guides
-
-### Installing Simply Love
-
-[Installing Simply Love](./Other/Documentation/InstallingSimplyLove-README.md)
-
-### Profile Avatars
-
-[Profile Avatars](./Other/Documentation/ProfileAvatars-README.md)
-
-### Player Options Menu
-
-Guide by Rob Nichols:
-[Player Options Menu](https://robnicholsgames.com/2020/04/13/how-to-setup-stepmania-for-modern-dance-gaming/#menus)
-
-### Custom Songs from USB
-
-[Custom Songs from USB](./Other/Documentation/CustomSongsFromUSB-README.md)
-
-### Casual Mode
-
-<p>Casual Mode was designed with public arcade machines and casual players in mind. Learn more here:</p>
-
-[Casual Mode](./Other/Documentation/CasualMode-README.md)
-
-### Tips for installing StepMania
-
-[Troubleshooting StepMania](./Other/Documentation/TroubleshootingStepMania-README.md)
-
-
-## Hardware Guides
-
-### Buying a 4-Panel Dance Pad
-
-*Dom ITG* has an excellent summary of 4-panel dance pad available in 2020:<br/>
-https://www.youtube.com/watch?v=sEWj2_BNG_0
-
-### USB Polling Issues
-
-[USB Polling Issues](./Other/Documentation/USBPollingIssues-README.md)
-
-### Linux for a Dedicated SM5 PC
-
-<p>
-  din maintains a Linux image for running SM5 on common arcade hardware:<br/>
-  https://dinsfire.com/itgimage
-</p>
-
-<p>
-  It streamlines the setup process for those who have arcade hardware and
-  want to start playing as quickly as possible.
-</p>
+<details>
+  <summary>Click to expand for details ⬇️</summary>
+ 
+ A profile card replaces the player name and avatar in the footer of ScreenSelectMusicWide and ScreenEvaluation. The profile card shows how many quads, tri-stars, duo-stars, and single-stars a player has achieved across ALL gametypes and difficulties along with a number of cool profile stats. Guest profiles (no profile) do not have a corresponding profile card. Make sure you make a local profile for yourself (or set up USB profiles) to get the most out of this theme.
+ 
+- GetTotalScoresWithGrade() is a new function in Outfox Alpha 4 LTS that makes profile star counts possible; previously, GetTotalStepsWithTopGrade() was used, but it is incredibly inefficient and would cause Stepmania to hang the more songs were loaded. The popular Waterfall theme gets around this by creating its own separate highscores tables which are more efficient to parse by the engine.
+ 
+- USB profiles are untested because I don't use them but probably work just fine. 
+   </details>
